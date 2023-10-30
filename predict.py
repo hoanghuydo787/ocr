@@ -44,9 +44,9 @@ def predict(model, datapath, output, verbose=15):
 
 if __name__=='__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument("--model", default='../data/ocr/model/', type=str)
-    parser.add_argument('--data', default='../data/ocr/preprocess/test/', type=str)
-    parser.add_argument('--output', default='../data/ocr/predict.json', type=str)
+    parser.add_argument("--model", default='./model/', type=str)
+    parser.add_argument('--data', default='./dataset/preprocess/test/', type=str)
+    parser.add_argument('--output', default='../data/predict.json', type=str)
     parser.add_argument('--device', default=2, type=int)
     args = parser.parse_args()
     

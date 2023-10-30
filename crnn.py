@@ -101,7 +101,7 @@ def train(datapath, labelpath, epochs, batch_size, lr, finetune=False, name='mod
 if __name__=='__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument("--train", default='../dataset/train/', type=str)
-    parser.add_argument("--label", default='../dataset/annotations.json', type=str)
+    parser.add_argument("--label", default='../dataset/labels.json', type=str)
 
     parser.add_argument("--epochs", default=100, type=int)
     parser.add_argument('--batch_size', default=4, type=int)
